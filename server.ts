@@ -3,7 +3,7 @@ import { Application, Router } from "oak";
 import { webhookCallback } from "grammy";
 
 const DOMAIN = "https://unict.morrone.dev";
-const API_ENDPOINT = "/telegram-bot-api-endpoints";
+const API_ENDPOINT = "/telegram-bot-api-endpoint";
 
 bot.api.setWebhook(DOMAIN + API_ENDPOINT);
 
