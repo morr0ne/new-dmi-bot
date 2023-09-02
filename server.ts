@@ -18,4 +18,4 @@ router
 const app = new Application();
 
 app.use(router.routes());
-app.listen({ port: 443 });
+app.listen();
