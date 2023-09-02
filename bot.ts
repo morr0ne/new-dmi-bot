@@ -1,10 +1,9 @@
 import { Bot, Keyboard } from "grammy";
 
-const BOT_TOKEN = Deno.env.get("BOT_TOKEN");
+const token = Deno.env.get("BOT_TOKEN");
+if (!token) throw new Error("BOT_TOKEN is unset");
 
-export const bot = new Bot(
-  BOT_TOKEN,
-);
+export const bot = new Bot(token);
 
 // deno-fmt-ignore
 bot.api.setMyCommands([
